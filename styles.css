@@ -1,0 +1,836 @@
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+    margin: 0;
+    background-color: #232223;
+  }
+  
+  header{
+    display: flex;
+    width:100%;
+    height: 15vh;
+    padding: 0 20px;
+    background-color: #1F143A;
+    justify-content: space-around;
+    align-items: center;
+    top: 0;
+  }
+  
+  .header-logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .header-logo h1{
+    font-family: Tahoma;
+    font-size: 1.9rem;
+    color: #EDEDED;
+  }
+  
+  #header-img{
+    width: 5vw;
+  }
+  
+  nav{
+    margin: 0;
+  }
+  
+  nav ul{
+    display: flex;
+    width: 35vw;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  nav li{
+    list-style: none;
+  }
+  
+  nav a{
+    color: white;
+    font-size: 1.4rem;
+    font-family: Arial;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color .6s;
+  }
+  
+  nav a:hover{
+    color: #AF8CFA;
+  }
+  
+  .container{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    height: 100vh;
+  }
+  
+  .game-cki{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    padding-top: 50px;
+    background: linear-gradient(to bottom, #220D27 1%, #261744 40%, #261744 30%, #3E1549 100%);
+  }
+  
+  .cki-box{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #8858ED;
+    padding: 5vh 7vw;
+    border-radius: 40px;
+    width: 40vw;
+    height: 60vh;
+    position: absolute;
+    justify-content: center;
+    z-index: 10;
+    left: 13vw;
+    box-shadow: 3px 3px 10px #333;
+  }
+  
+  .cki-box p{
+    font-size: 1.3rem;
+    font-family: Tahoma;
+  }
+  
+  .cki-box h2{
+    font-size: 3.5rem;
+    font-family: Tahoma;
+  }
+  
+  .btn-cki{
+    height: 7vh;
+    width: 10vw;
+    border-radius: 30px;
+    background-color: white;
+    color: #8858ED;
+    border: none;
+    font-size: 0.9rem;
+    font-weight: 700;
+    transition: background-color .7s;
+  }
+  
+  .btn-cki:hover{
+    color: white;
+    background-color: #8858ED;
+    border: 2px solid white;
+  }
+  
+  .img-box-cki{
+    display: flex;
+    left: 47.5vw;
+    position: relative;
+  }
+  
+  #img-cki{
+    border-radius: 30px;
+    box-shadow: 3px 3px 15px #333;
+  }
+  
+  .mais-vendidos{
+    background-color: #060506;
+    height: 400vh;
+    padding-top: 30vh;
+    margin-top: -10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .header-mais-vendidos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 10vh;
+    width: 86%;
+  }
+  
+  .header-mais-vendidos h1{
+    font-size: 2.4em;
+    font-family: Arial;
+    letter-spacing: 2px;
+  }
+  
+  #submit-mais-vendidos{
+    height: 5vh;
+    width: 10vw;
+    border-radius: 30px;
+    background-color: white;
+    color: #8858ED;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: 700;
+    transition: background-color .7s;
+  }
+  
+  #submit-mais-vendidos:hover{
+    color: white;
+    background-color: #8858ED;
+    border: 2px solid white;
+  }
+  
+  .produtos-mais-vendidos-wrappper{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding-bottom: 10vh;
+  }
+  
+  .produtos-mais-vendidos{
+    display: grid;
+    grid-template-columns: 23% 23% 23% 23%;
+    justify-content: space-around;
+    gap: 40px;
+    align-items: center;
+  }
+  
+  .card-produtos-mais-vendidos{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .card-produtos-mais-vendidos img{
+     transition: transform 0.3s ease;
+  }
+  
+  .card-produtos-mais-vendidos img:hover{
+    transform: scale(1.15);
+  }
+  
+  .titulo-produto-mais-vendido{
+    margin-top: 0.8em;
+    font-size: 1.4rem;
+    word-break: break-word;
+    color: #8858ED;
+  }
+  
+  .preco-produto-mais-vendido{
+    font-size: 1.1rem;
+    font-family: Arial;
+    font-weight: 700;
+  }
+  
+  .adicionar-no-carrinho{
+    height: 5vh;
+    width: 10vw;
+    border-radius: 30px;
+    background-color: #8858ED;
+    color: white;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: 700;
+    transition: background-color .5s;
+  }
+  
+  .adicionar-no-carrinho:hover{
+    color: white;
+    background-color: #4B2C8E;
+  }
+  
+  .promo-da-semana{
+    margin: 0;
+    padding: 0;
+  }
+  
+  .promo-da-semana-wrapper{
+    display: flex;
+    height: 120vh;
+    width: 100%;
+  }
+  
+  .box-promo-da-semana{
+    display: flex;
+    flex-direction: column;
+    width: 35vw;
+    height: 50vh;
+    background-color: #8858ED;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-top: 20vh;
+    margin-left: 50vh;
+    border-radius: 40px;
+    box-shadow: 9px 9px 17px #333;
+  }
+  
+  .box-promo-da-semana h2{
+    font-size: 1.5rem;
+    font-family: Arial;
+  }
+  
+  .box-promo-da-semana h1{
+    font-size: 8rem;
+    font-family: Tahoma;
+  }
+  
+  #submit-promo-da-semana{
+    height: 5vh;
+    width: 10vw;
+    border-radius: 30px;
+    background-color: white;
+    color: #8858ED;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-top: 5vh;
+    transition: background-color .5s;
+  }
+  
+  #submit-promo-da-semana:hover{
+    color: white;
+    background-color: #4B2C8E;
+    border: 1px solid white;
+  }
+  
+  .card-img-game{
+    display: flex;
+  }
+  
+  #img-chronosplit{
+    display: flex;
+    margin-left: 10vw;
+    margin-top: 15vh;
+    border-radius: 20px;
+    box-shadow: 9px 9px 17px #333;
+  }
+  
+  #img-dead-at-last{
+    display: flex;
+    margin-left: -2vw;
+    margin-top: 30vh;
+    border-radius: 20px;
+    box-shadow: 9px 9px 17px #333;
+  }
+  
+  #img-kira{
+    display: flex;
+    margin-left: -2vw;
+    margin-top: 22vh;
+    border-radius: 20px;
+    box-shadow: 9px 9px 17px #333;
+  }
+  
+  .video-demo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #9DC08B;
+  }
+  
+  .newsletter{
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .newsletter-wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 15vh;
+    padding-bottom: 26vh;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://images.unsplash.com/photo-1550684376-efcbd6e3f031?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGJsYWNrfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  
+  .newsletter-wrapper::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.6);
+  }
+  
+  .newsletter h1{
+    font-size: 3rem;
+    font-family: Tahoma;
+    letter-spacing: 4px;
+    position: relative;
+  }
+  
+  .newsletter p{
+    font-size: 1.2rem;
+    width: 20vw;
+    text-align: center;
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+    position: relative;
+  }
+  
+  #form{
+    display: flex;
+    flex-direction: column;
+    width: 35vw;
+    position: relative;
+  }
+  
+  #email{
+    background: none;
+    text-align: center;
+    padding: 2vh;
+    border: 3px solid #E55807;
+    border-radius: 14px 14px 0 0;
+  }
+  
+  #email:focus, #email:active{
+        outline: none;
+        border: 3px solid white;
+  }
+  
+  #submit{
+    background-color: white;
+    border: none;
+    height: 6vh;
+    border-radius: 0 0 14px 14px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: background-color .5s;
+  }
+  
+  #submit:hover{
+    color: white;
+    background-color: #4B2C8E;
+    border: 3px solid white;
+  }
+  
+  .imagens-vazio{
+    display: flex;
+    content: "";
+    height: 20vh;
+    padding: 20vh;
+    background-color: #9158EA;
+  }
+  
+  .card-imagens-jogos{
+      position: absolute;
+      margin-top: -40vh;
+  }
+  
+  .footer{
+    margin: 0;
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: #EDF1D6;
+  }
+  
+  .footer-wrapper{
+    padding: 10vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .footer h1{
+    font-size: 1.7rem;
+    font-family: Tahoma;
+    letter-spacing: 4px;
+    color: black;
+  }
+  
+  #creditos{
+    font-size: 2.2rem;
+    margin-bottom: 5vh;
+    color: #401C7B;
+  }
+  
+  #link-arcade{
+    color: #401C7B;
+    text-decoration: none;
+  }
+  
+  .footer p{
+    color: black;
+    font-size: 1rem;
+    margin-top: 2vh;
+    font-family: Arial;
+  }
+  
+  @media screen and (max-width: 720px){
+    header {
+      height: 13vh;
+      padding: 0 10px;
+    }
+    
+    .header-logo{
+      gap: 8px;
+    }
+  
+    .header-logo h1 {
+      font-size: 1rem;
+    }
+    
+    #header-img {
+      width: 6vw;
+    }
+    
+    nav ul {
+      width: 45vw;
+    }
+  
+    nav a{
+      font-size: 0.9rem;
+    }
+    
+    .cki-box {
+      width: 47vw;
+      height: 43vh;
+      left: 6vw;
+      padding: 5vh 7vw;
+    }
+  
+    .cki-box p{
+      font-size: 0.8rem;
+    }
+    
+    .cki-box h2 {
+      font-size: 1.8rem;
+    }
+    
+    .btn-cki {
+      height: 8vh;
+      width: 17vw;
+      font-size: 0.7rem;
+    }
+    
+    .img-box-cki {
+      left: 31.5vw;
+    }
+    
+    .mais-vendidos {
+      padding-top: 20vh;
+      margin-top: -5vh;
+    }
+  
+    .mais-vendidos h1{
+      font-size: 1.8rem;
+    }
+    
+    #submit-mais-vendidos{
+      width: 16vw;
+      font-size: 0.9rem;
+    }
+  
+   .produtos-mais-vendidos{
+     grid-template-columns: 18% 18%
+   }
+    
+    .card {
+      width: 40vw;
+      height: 25vh;
+    }
+  
+    .card-produtos-mais-vendidos img{
+      width: 30vw;
+    }
+  
+    .titulo-produto-mais-vendido{
+      font-size: 1rem;
+      width: 30vw;
+    }
+  
+    .preco-produto-mais-vendido{
+      font-size: 0.8rem;
+    }
+  
+    .adicionar-no-carrinho{
+      font-size: 0.8rem;
+      width: 13vw;
+    }
+  
+    .box-promo-da-semana{
+      width: 43vw;
+      height: 35vh;
+      margin-left: 13vw
+    }
+  
+    .box-promo-da-semana h2{
+    font-size: 0.7rem;
+    }
+  
+    .box-promo-da-semana h1{
+    font-size: 3rem;
+    }
+  
+    #submit-promo-da-semana{
+      width: 16vw;
+      font-size: 0.7rem;
+    }
+  
+    #img-chronosplit{
+      width: 42vw;
+      margin-left: 2vw;
+    }
+  
+    #img-dead-at-last{
+      width: 42vw;
+      margin-left: -23vw;
+    }
+  
+    #img-kira{
+      width: 42vw;
+      margin-left: -10vw;
+    }
+  
+    .newsletter p{
+      font-size: 0.9rem;
+      width: 40vw;
+    }
+  
+    .imagens-vazio{
+      padding: 15vh;
+    }
+  
+    .card-imagens-jogos img{
+      width: 98vw;
+    }
+  
+    .card-imagens-jogos{
+      margin-left: -14vw;
+      margin-top: -33vh;
+    }
+  
+    .footer-wrapper{
+      padding: 3vh;
+    }
+  
+    .footer h1{
+      font-size: 1rem;
+      letter-spacing: 0;
+    }
+  
+    #creditos{
+      font-size: 1.8rem;
+    }
+  
+    .footer p{
+      font-size: 0.7rem;
+    }
+  }
+
+    @media screen and (max-width: 550px) {
+      header {
+        height: 6vh;
+        padding: 0 10px;
+      }
+      
+      .header-logo{
+        gap: 8px;
+      }
+    
+      .header-logo h1 {
+        font-size: 0.6rem;
+      }
+      
+      #header-img {
+        width: 6vw;
+      }
+      
+      nav ul {
+        width: 55vw;
+      }
+    
+      nav a{
+        font-size: 0.7rem;
+      }
+      
+      .cki-box {
+        width: 47vw;
+        height: 20vh;
+        left: 6vw;
+        padding: 5vh 7vw;
+      }
+    
+      .cki-box p{
+        font-size: 0.6em;
+      }
+      
+      .cki-box h2 {
+        font-size: 1rem;
+      }
+      
+      .btn-cki {
+        height: 9vh;
+        width: 25vw;
+        font-size: 0.6rem;
+      }
+
+      #img-cki{
+        height: 50vh;
+      }
+      
+      .img-box-cki {
+        left: 12vw;
+      }
+      
+      .mais-vendidos {
+        padding-top: 14vh;
+        margin-top: -5vh;
+      }
+    
+      .mais-vendidos h1{
+        font-size: 1.3rem;
+      }
+      
+      #submit-mais-vendidos{
+        width: 19vw;
+        font-size: 0.8rem;
+      }
+    
+     .produtos-mais-vendidos{
+       grid-template-columns: 18% 18%;
+     }
+      
+    .card {
+      width: 40vw;
+      height: 25vh;
+    }
+    
+    .card-produtos-mais-vendidos img{
+      width: 30vw;
+    }
+    
+    .titulo-produto-mais-vendido{
+      font-size: 0.7rem;
+      width: 35vw;
+    }
+    
+    .preco-produto-mais-vendido{
+      font-size: 0.8rem;
+    }
+  
+    .adicionar-no-carrinho{
+      font-size: 0.6rem;
+      width: 20vw;
+    }
+
+    .promo-da-semana-wrapper{
+      height: 50vh;
+    }
+    
+    .box-promo-da-semana{
+      width: 47vw;
+      height: 16vh;
+      margin-left: 13vw;
+      margin-top: 9vh;
+    }
+    
+    .box-promo-da-semana h2{
+      font-size: 0.6rem;
+    }
+    
+    .box-promo-da-semana h1{
+      font-size: 2rem;
+    }
+    
+    #submit-promo-da-semana{
+      width: 19vw;
+      height: 2.5vh;
+      font-size: 0.6rem;
+      margin-top: 1.3vh;
+    }
+    
+    #img-chronosplit{
+      width: 42vw;
+      height: 30vh;
+      margin-left: 2vw;
+      margin-top: 6vh;
+    }
+    
+    #img-dead-at-last{
+      width: 42vw;
+      height: 30vh;
+      margin-left: -23vw;
+      margin-top: 14vh;
+    }
+    
+    #img-kira{
+      width: 42vw;
+      height: 30vh;
+      margin-left: -7vw;
+      margin-top: 9vh;
+    }
+
+    .newsletter-wrapper{
+      padding-top:8vh;
+      padding-bottom: 14vh;
+    }
+
+    .newsletter h1{
+      font-size: 2.6rem;
+    }
+    
+    .newsletter p{
+      font-size: 0.9rem;
+      margin-top: 3vh;
+      width: 60vw;
+      margin-bottom: 5vh;
+    }
+
+    form{
+      justify-content: center;
+      align-items: center;
+      width: 80vw;
+    }
+
+    #email, #submit{
+      width: 50vw;
+    }
+    
+    .imagens-vazio{
+      padding: 4vh;
+    }
+    
+    .card-imagens-jogos img{
+      width: 99vw;
+    }
+    
+    .card-imagens-jogos{
+      margin-left: -8vw;
+      margin-top: -11vh;
+    }
+    
+    .footer-wrapper{
+      margin-top: -35vh;
+      height: 90vh;
+    }
+    
+    .footer h1{
+      font-size: 1rem;
+      letter-spacing: 0;
+    }
+    
+    #creditos{
+      font-size: 1.4rem;
+    }
+    
+    .footer p{
+      font-size: 0.6rem;
+      width: 100%;
+    }
+  }
+}
